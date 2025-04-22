@@ -1,8 +1,8 @@
 # Import python packages
-import requests
-
 import streamlit as st
 from snowflake.snowpark.functions import col
+
+import requests
 
 
 helpful_links = [
@@ -40,8 +40,6 @@ ingredients_list = st.multiselect(
 )
 
 if ingredients_list:
-    #st.write(ingredients_list)
-    #st.text(ingredients_list)
 
     ingredients_string = ''
 
